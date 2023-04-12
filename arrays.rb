@@ -14,3 +14,14 @@ integers.shift(2)
 
 # This will add a "false" value to the beginning of the "booleans" array
 booleans.unshift(false)
+
+#----------------
+# Index Positions
+#----------------
+
+strings = ["violin", "viola", "cello", "bass", "banjo"]
+
+strings[1]     #=> "viola"
+strings[-1]    #=> "banjo"
+strings[0,4]   #=> ["violin", "viola", "cello", "bass"]
+strings[1..-2] #=> ["viola", "cello", "bass"]
