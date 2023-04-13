@@ -25,3 +25,13 @@ strings[1]     #=> "viola"
 strings[-1]    #=> "banjo"
 strings[0,4]   #=> ["violin", "viola", "cello", "bass"]
 strings[1..-2] #=> ["viola", "cello", "bass"]
+
+#-----------------------
+# Array Method of Choice
+#-----------------------
+
+# I'm using the .include? method. The .include? method checks if a given object is inside an array and returns a boolean.
+
+strings = ["violin", "viola", "cello", "bass", "banjo"]
+strings.include?("mandolin")   #=> false
+strings.include?("cello")      #=> true
